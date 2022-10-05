@@ -56,7 +56,7 @@
      */
     function LoadHeader(): void {
         console.log("Loading Header...");
-        $.get("./Views/components/header.html", function (html_data) {
+        $.get("/Views/components/header.html", function (html_data) {
             // console.log(html_data);
             $("header").html(html_data);
             $("li>a#Home").addClass("active");
@@ -109,7 +109,7 @@
          */
     function LoadFooter(): void {
         console.log("Loading Footer...");
-        $.get("./Views/components/footer.html", function (html_data) {
+        $.get("/Views/components/footer.html", function (html_data) {
             // console.log(html_data);
             $("footer").html(html_data);
         });
